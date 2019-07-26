@@ -1,0 +1,23 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { TipoPersonaComponent } from './tipopersona.component';
+
+describe('TipoPersonaComponent', () => {
+   let component: TipoPersonaComponent;
+   let fixture: ComponentFixture<TipoPersonaComponent>;
+
+   beforeEach(async(() => {
+      TestBed.configureTestingModule({
+         declarations: [TipoPersonaComponent]
+      }).compileComponents();
+   }));
+
+   beforeEach(() => {
+      fixture = TestBed.createComponent(TipoPersonaComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
+   });
+
+   it('should create', () => {
+      expect(component).toBeTruthy();
+   });
+});

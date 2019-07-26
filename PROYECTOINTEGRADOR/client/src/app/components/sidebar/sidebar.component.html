@@ -1,0 +1,40 @@
+<div class="sidebar-header bg-darkGrayBlue fg-white" data-image="images/sb-bg-1.jpg">
+   <a class="fg-white sub-action"[routerLink]="['/login']" (click)="logOut()">
+      <span class="mif-settings-power mif-2x"></span>
+   </a>
+   <a class="avatar" [routerLink]="['/profile']" [routerLinkActive]="['router-link-active']">
+      <img src="{{profileImg}}"/>
+   </a>
+   <span class="title" *ngIf="refreshUser()">{{ user.name }}</span>
+   <span class="subtitle"> sistema de matriculacion de ingles pro Naran DP</span>
+</div>
+<ul class="sidebar-menu">
+   <li class="group-title">MODULOS DE LA BASE DE DATOS</li>
+   <li>
+      <a [routerLink]="['/contacto']" [routerLinkActive]="['router-link-active']">Contacto </a>
+   </li>
+   <li>
+      <a [routerLink]="['/curso']" [routerLinkActive]="['router-link-active']">Curso </a>
+   </li>
+   <li>
+      <a [routerLink]="['/horario']" [routerLinkActive]="['router-link-active']">Horario </a>
+   </li>
+   <li>
+      <a [routerLink]="['/info_laboral']" [routerLinkActive]="['router-link-active']">InfoLaboral </a>
+   </li>
+   <li>
+      <a [routerLink]="['/matricula']" [routerLinkActive]="['router-link-active']">Matricula </a>
+   </li>
+   <li>
+      <a [routerLink]="['/modalidad']" [routerLinkActive]="['router-link-active']">Modalidad </a>
+   </li>
+   <li>
+      <a [routerLink]="['/nivel']" [routerLinkActive]="['router-link-active']">Nivel </a>
+   </li>
+   <li>
+      <a [routerLink]="['/persona']" [routerLinkActive]="['router-link-active']">Persona </a>
+   </li>
+   <li>
+      <a [routerLink]="['/tipo_persona']" [routerLinkActive]="['router-link-active']">TipoPersona </a>
+   </li>
+</ul>
